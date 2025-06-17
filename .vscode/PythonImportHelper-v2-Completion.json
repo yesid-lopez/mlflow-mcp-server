@@ -1,0 +1,354 @@
+[
+    {
+        "label": "runpy",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "runpy",
+        "description": "runpy",
+        "detail": "runpy",
+        "documentation": {}
+    },
+    {
+        "label": "annotations",
+        "importPath": "__future__",
+        "description": "__future__",
+        "isExtraImport": true,
+        "detail": "__future__",
+        "documentation": {}
+    },
+    {
+        "label": "os",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os",
+        "description": "os",
+        "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "getenv",
+        "importPath": "os",
+        "description": "os",
+        "isExtraImport": true,
+        "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "site",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "site",
+        "description": "site",
+        "detail": "site",
+        "documentation": {}
+    },
+    {
+        "label": "sys",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "sys",
+        "description": "sys",
+        "detail": "sys",
+        "documentation": {}
+    },
+    {
+        "label": "client",
+        "importPath": "mlflow_mcp_server.utils.mlflow_client",
+        "description": "mlflow_mcp_server.utils.mlflow_client",
+        "isExtraImport": true,
+        "detail": "mlflow_mcp_server.utils.mlflow_client",
+        "documentation": {}
+    },
+    {
+        "label": "client",
+        "importPath": "mlflow_mcp_server.utils.mlflow_client",
+        "description": "mlflow_mcp_server.utils.mlflow_client",
+        "isExtraImport": true,
+        "detail": "mlflow_mcp_server.utils.mlflow_client",
+        "documentation": {}
+    },
+    {
+        "label": "client",
+        "importPath": "mlflow_mcp_server.utils.mlflow_client",
+        "description": "mlflow_mcp_server.utils.mlflow_client",
+        "isExtraImport": true,
+        "detail": "mlflow_mcp_server.utils.mlflow_client",
+        "documentation": {}
+    },
+    {
+        "label": "Field",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "Annotated",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "pprint",
+        "importPath": "pprint",
+        "description": "pprint",
+        "isExtraImport": true,
+        "detail": "pprint",
+        "documentation": {}
+    },
+    {
+        "label": "mlflow",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "mlflow",
+        "description": "mlflow",
+        "detail": "mlflow",
+        "documentation": {}
+    },
+    {
+        "label": "MlflowClient",
+        "importPath": "mlflow",
+        "description": "mlflow",
+        "isExtraImport": true,
+        "detail": "mlflow",
+        "documentation": {}
+    },
+    {
+        "label": "FastMCP",
+        "importPath": "mcp.server.fastmcp",
+        "description": "mcp.server.fastmcp",
+        "isExtraImport": true,
+        "detail": "mcp.server.fastmcp",
+        "documentation": {}
+    },
+    {
+        "label": "get_experiment",
+        "importPath": "mlflow_mcp_server.tools.experiment_tools",
+        "description": "mlflow_mcp_server.tools.experiment_tools",
+        "isExtraImport": true,
+        "detail": "mlflow_mcp_server.tools.experiment_tools",
+        "documentation": {}
+    },
+    {
+        "label": "get_experiment_by_name",
+        "importPath": "mlflow_mcp_server.tools.experiment_tools",
+        "description": "mlflow_mcp_server.tools.experiment_tools",
+        "isExtraImport": true,
+        "detail": "mlflow_mcp_server.tools.experiment_tools",
+        "documentation": {}
+    },
+    {
+        "label": "search_experiments",
+        "importPath": "mlflow_mcp_server.tools.experiment_tools",
+        "description": "mlflow_mcp_server.tools.experiment_tools",
+        "isExtraImport": true,
+        "detail": "mlflow_mcp_server.tools.experiment_tools",
+        "documentation": {}
+    },
+    {
+        "label": "get_run",
+        "importPath": "mlflow_mcp_server.tools.run_tools",
+        "description": "mlflow_mcp_server.tools.run_tools",
+        "isExtraImport": true,
+        "detail": "mlflow_mcp_server.tools.run_tools",
+        "documentation": {}
+    },
+    {
+        "label": "get_experiment_runs",
+        "importPath": "mlflow_mcp_server.tools.run_tools",
+        "description": "mlflow_mcp_server.tools.run_tools",
+        "isExtraImport": true,
+        "detail": "mlflow_mcp_server.tools.run_tools",
+        "documentation": {}
+    },
+    {
+        "label": "get_registered_models",
+        "importPath": "mlflow_mcp_server.tools.registered_models",
+        "description": "mlflow_mcp_server.tools.registered_models",
+        "isExtraImport": true,
+        "detail": "mlflow_mcp_server.tools.registered_models",
+        "documentation": {}
+    },
+    {
+        "label": "get_model_versions",
+        "importPath": "mlflow_mcp_server.tools.registered_models",
+        "description": "mlflow_mcp_server.tools.registered_models",
+        "isExtraImport": true,
+        "detail": "mlflow_mcp_server.tools.registered_models",
+        "documentation": {}
+    },
+    {
+        "label": "bin_dir",
+        "kind": 5,
+        "importPath": ".venv.bin.activate_this",
+        "description": ".venv.bin.activate_this",
+        "peekOfCode": "bin_dir = os.path.dirname(abs_file)\nbase = bin_dir[: -len(\"bin\") - 1]  # strip away the bin part from the __file__, plus the path separator\n# prepend bin to PATH (this file is inside the bin directory)\nos.environ[\"PATH\"] = os.pathsep.join([bin_dir, *os.environ.get(\"PATH\", \"\").split(os.pathsep)])\nos.environ[\"VIRTUAL_ENV\"] = base  # virtual env is right above bin directory\nos.environ[\"VIRTUAL_ENV_PROMPT\"] = \"mlflow-mcp-server\" or os.path.basename(base)  # noqa: SIM222\n# add the virtual environments libraries to the host python import mechanism\nprev_length = len(sys.path)\nfor lib in \"../lib/python3.11/site-packages\".split(os.pathsep):\n    path = os.path.realpath(os.path.join(bin_dir, lib))",
+        "detail": ".venv.bin.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "base",
+        "kind": 5,
+        "importPath": ".venv.bin.activate_this",
+        "description": ".venv.bin.activate_this",
+        "peekOfCode": "base = bin_dir[: -len(\"bin\") - 1]  # strip away the bin part from the __file__, plus the path separator\n# prepend bin to PATH (this file is inside the bin directory)\nos.environ[\"PATH\"] = os.pathsep.join([bin_dir, *os.environ.get(\"PATH\", \"\").split(os.pathsep)])\nos.environ[\"VIRTUAL_ENV\"] = base  # virtual env is right above bin directory\nos.environ[\"VIRTUAL_ENV_PROMPT\"] = \"mlflow-mcp-server\" or os.path.basename(base)  # noqa: SIM222\n# add the virtual environments libraries to the host python import mechanism\nprev_length = len(sys.path)\nfor lib in \"../lib/python3.11/site-packages\".split(os.pathsep):\n    path = os.path.realpath(os.path.join(bin_dir, lib))\n    site.addsitedir(path)",
+        "detail": ".venv.bin.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "os.environ[\"PATH\"]",
+        "kind": 5,
+        "importPath": ".venv.bin.activate_this",
+        "description": ".venv.bin.activate_this",
+        "peekOfCode": "os.environ[\"PATH\"] = os.pathsep.join([bin_dir, *os.environ.get(\"PATH\", \"\").split(os.pathsep)])\nos.environ[\"VIRTUAL_ENV\"] = base  # virtual env is right above bin directory\nos.environ[\"VIRTUAL_ENV_PROMPT\"] = \"mlflow-mcp-server\" or os.path.basename(base)  # noqa: SIM222\n# add the virtual environments libraries to the host python import mechanism\nprev_length = len(sys.path)\nfor lib in \"../lib/python3.11/site-packages\".split(os.pathsep):\n    path = os.path.realpath(os.path.join(bin_dir, lib))\n    site.addsitedir(path)\nsys.path[:] = sys.path[prev_length:] + sys.path[0:prev_length]\nsys.real_prefix = sys.prefix",
+        "detail": ".venv.bin.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "os.environ[\"VIRTUAL_ENV\"]",
+        "kind": 5,
+        "importPath": ".venv.bin.activate_this",
+        "description": ".venv.bin.activate_this",
+        "peekOfCode": "os.environ[\"VIRTUAL_ENV\"] = base  # virtual env is right above bin directory\nos.environ[\"VIRTUAL_ENV_PROMPT\"] = \"mlflow-mcp-server\" or os.path.basename(base)  # noqa: SIM222\n# add the virtual environments libraries to the host python import mechanism\nprev_length = len(sys.path)\nfor lib in \"../lib/python3.11/site-packages\".split(os.pathsep):\n    path = os.path.realpath(os.path.join(bin_dir, lib))\n    site.addsitedir(path)\nsys.path[:] = sys.path[prev_length:] + sys.path[0:prev_length]\nsys.real_prefix = sys.prefix\nsys.prefix = base",
+        "detail": ".venv.bin.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "os.environ[\"VIRTUAL_ENV_PROMPT\"]",
+        "kind": 5,
+        "importPath": ".venv.bin.activate_this",
+        "description": ".venv.bin.activate_this",
+        "peekOfCode": "os.environ[\"VIRTUAL_ENV_PROMPT\"] = \"mlflow-mcp-server\" or os.path.basename(base)  # noqa: SIM222\n# add the virtual environments libraries to the host python import mechanism\nprev_length = len(sys.path)\nfor lib in \"../lib/python3.11/site-packages\".split(os.pathsep):\n    path = os.path.realpath(os.path.join(bin_dir, lib))\n    site.addsitedir(path)\nsys.path[:] = sys.path[prev_length:] + sys.path[0:prev_length]\nsys.real_prefix = sys.prefix\nsys.prefix = base",
+        "detail": ".venv.bin.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "prev_length",
+        "kind": 5,
+        "importPath": ".venv.bin.activate_this",
+        "description": ".venv.bin.activate_this",
+        "peekOfCode": "prev_length = len(sys.path)\nfor lib in \"../lib/python3.11/site-packages\".split(os.pathsep):\n    path = os.path.realpath(os.path.join(bin_dir, lib))\n    site.addsitedir(path)\nsys.path[:] = sys.path[prev_length:] + sys.path[0:prev_length]\nsys.real_prefix = sys.prefix\nsys.prefix = base",
+        "detail": ".venv.bin.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "sys.path[:]",
+        "kind": 5,
+        "importPath": ".venv.bin.activate_this",
+        "description": ".venv.bin.activate_this",
+        "peekOfCode": "sys.path[:] = sys.path[prev_length:] + sys.path[0:prev_length]\nsys.real_prefix = sys.prefix\nsys.prefix = base",
+        "detail": ".venv.bin.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "sys.real_prefix",
+        "kind": 5,
+        "importPath": ".venv.bin.activate_this",
+        "description": ".venv.bin.activate_this",
+        "peekOfCode": "sys.real_prefix = sys.prefix\nsys.prefix = base",
+        "detail": ".venv.bin.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "sys.prefix",
+        "kind": 5,
+        "importPath": ".venv.bin.activate_this",
+        "description": ".venv.bin.activate_this",
+        "peekOfCode": "sys.prefix = base",
+        "detail": ".venv.bin.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "get_experiment",
+        "kind": 2,
+        "importPath": "mlflow_mcp_server.tools.experiment_tools",
+        "description": "mlflow_mcp_server.tools.experiment_tools",
+        "peekOfCode": "def get_experiment(experiment_id: str) -> dict:\n    \"\"\"Get experiment details\"\"\"\n    experiment = client.get_experiment(experiment_id)\n    return {\n        \"name\": experiment.name,\n        \"experiment_id\": experiment.experiment_id,\n        \"lifecycle_stage\": experiment.lifecycle_stage,\n    }\ndef get_experiment_by_name(experiment_name: str) -> dict:\n    \"\"\"Get experiment details by name\"\"\"",
+        "detail": "mlflow_mcp_server.tools.experiment_tools",
+        "documentation": {}
+    },
+    {
+        "label": "get_experiment_by_name",
+        "kind": 2,
+        "importPath": "mlflow_mcp_server.tools.experiment_tools",
+        "description": "mlflow_mcp_server.tools.experiment_tools",
+        "peekOfCode": "def get_experiment_by_name(experiment_name: str) -> dict:\n    \"\"\"Get experiment details by name\"\"\"\n    experiment = client.get_experiment_by_name(experiment_name)\n    return {\n        \"name\": experiment.name,\n        \"experiment_id\": experiment.experiment_id,\n        \"lifecycle_stage\": experiment.lifecycle_stage,\n    }\ndef search_experiments(\n    name: str | None = None,",
+        "detail": "mlflow_mcp_server.tools.experiment_tools",
+        "documentation": {}
+    },
+    {
+        "label": "search_experiments",
+        "kind": 2,
+        "importPath": "mlflow_mcp_server.tools.experiment_tools",
+        "description": "mlflow_mcp_server.tools.experiment_tools",
+        "peekOfCode": "def search_experiments(\n    name: str | None = None,\n    token: str | None = None,\n) -> list:\n    \"\"\"List all experiments\"\"\"\n    filter_string = None\n    if name:\n        filter_string = f\"name LIKE '%{name}%'\"\n    experiments_response = client.search_experiments(\n        filter_string=filter_string,",
+        "detail": "mlflow_mcp_server.tools.experiment_tools",
+        "documentation": {}
+    },
+    {
+        "label": "get_registered_models",
+        "kind": 2,
+        "importPath": "mlflow_mcp_server.tools.registered_models",
+        "description": "mlflow_mcp_server.tools.registered_models",
+        "peekOfCode": "def get_registered_models(\n    model_name: Annotated[\n        str,\n        Field(description=\"The name of the registered model to search for\"),\n    ] = None,\n    token: Annotated[str, Field(description=\"The token to use for pagination\")] = None,\n):\n    filter_string = None\n    if model_name:\n        filter_string = f\"name LIKE '%{model_name}%'\"",
+        "detail": "mlflow_mcp_server.tools.registered_models",
+        "documentation": {}
+    },
+    {
+        "label": "get_model_versions",
+        "kind": 2,
+        "importPath": "mlflow_mcp_server.tools.registered_models",
+        "description": "mlflow_mcp_server.tools.registered_models",
+        "peekOfCode": "def get_model_versions(model_name=None, token=None):\n    filter_string = None\n    if model_name:\n        filter_string = f\"name LIKE '%{model_name}%'\"\n    model_versions = client.search_model_versions(\n        filter_string=filter_string,\n        page_token=token,\n        max_results=20,\n    )\n    return {",
+        "detail": "mlflow_mcp_server.tools.registered_models",
+        "documentation": {}
+    },
+    {
+        "label": "get_experiment_runs",
+        "kind": 2,
+        "importPath": "mlflow_mcp_server.tools.run_tools",
+        "description": "mlflow_mcp_server.tools.run_tools",
+        "peekOfCode": "def get_experiment_runs(\n    experiment_id: str = \"226\",\n    token: str | None = None,\n) -> list:\n    \"\"\"Get all runs for an experiment\"\"\"\n    runs = client.search_runs(\n        experiment_ids=[experiment_id],\n        max_results=20,\n        page_token=token,\n    )",
+        "detail": "mlflow_mcp_server.tools.run_tools",
+        "documentation": {}
+    },
+    {
+        "label": "get_run",
+        "kind": 2,
+        "importPath": "mlflow_mcp_server.tools.run_tools",
+        "description": "mlflow_mcp_server.tools.run_tools",
+        "peekOfCode": "def get_run(run_id: str) -> dict:\n    \"\"\"Get a run by ID\"\"\"\n    run = client.get_run(run_id)\n    return {\n        \"run_id\": run.info.run_id,\n        \"run_name\": run.info.run_name,\n        \"status\": run.info.status,\n        \"metrics\": run.data.metrics,\n        \"params\": run.data.params,\n        \"tags\": run.data.tags,",
+        "detail": "mlflow_mcp_server.tools.run_tools",
+        "documentation": {}
+    },
+    {
+        "label": "identify_run_type",
+        "kind": 2,
+        "importPath": "mlflow_mcp_server.tools.run_tools",
+        "description": "mlflow_mcp_server.tools.run_tools",
+        "peekOfCode": "def identify_run_type(run_id):\n    # Get the run\n    run = client.get_run(run_id)\n    # Check if it's a child run\n    parent_run = client.get_parent_run(run_id)\n    if parent_run is not None:\n        return \"child\"\n    # Check if it has child runs (making it a parent)\n    experiment_id = run.info.experiment_id\n    filter_string = f\"tags.mlflow.parentRunId = '{run_id}'\"",
+        "detail": "mlflow_mcp_server.tools.run_tools",
+        "documentation": {}
+    },
+    {
+        "label": "client",
+        "kind": 5,
+        "importPath": "mlflow_mcp_server.utils.mlflow_client",
+        "description": "mlflow_mcp_server.utils.mlflow_client",
+        "peekOfCode": "client = MlflowClient()",
+        "detail": "mlflow_mcp_server.utils.mlflow_client",
+        "documentation": {}
+    },
+    {
+        "label": "mcp",
+        "kind": 5,
+        "importPath": "mlflow_mcp_server.server",
+        "description": "mlflow_mcp_server.server",
+        "peekOfCode": "mcp = FastMCP(\n    name=\"MLFlow MCP Server\",\n    dependencies=[\"mlflow\", \"pydantic\"],\n)\nmcp.add_tool(get_experiment)\nmcp.add_tool(get_experiment_by_name)\nmcp.add_tool(search_experiments)\nmcp.add_tool(get_run)\nmcp.add_tool(get_experiment_runs)\nmcp.add_tool(get_registered_models)",
+        "detail": "mlflow_mcp_server.server",
+        "documentation": {}
+    }
+]
