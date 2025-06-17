@@ -13,3 +13,6 @@ dependencies = [
 [build-system]
 requires = ["hatchling"]
 build-backend = "hatchling.build"
+
+[project.scripts]
+mlflow_mcp_server = "mlflow_mcp_server.__main__:main"
