@@ -69,8 +69,11 @@ Add the following configuration to your MCP client (e.g., `~/.cursor/mcp.json` f
 {
   "mcpServers": {
     "mlflow": {
-      "command": "uv",
-      "args": ["--directory", "/path/to/mlflow-mcp-server", "run", "-m", "mlflow_mcp_server"]
+      "command": "uvx",
+      "args": ["--from", "git+https://github.com/yesid-lopez/mlflow-mcp-server", "mlflow_mcp_server"],
+      "env": {
+        "MLFLOW_TRACKING_URI": "YOUR_TRACKING_URI"
+      }
     }
   }
 }
