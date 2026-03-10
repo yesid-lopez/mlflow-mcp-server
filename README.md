@@ -7,7 +7,8 @@ A Model Context Protocol (MCP) server that provides seamless integration with ML
 This MCP server exposes MLflow functionality through a standardized protocol, allowing AI assistants like Claude to:
 - Browse and search MLflow experiments
 - Retrieve experiment runs and their details
-- Query registered models and model versions
+- Query, create, rename, and delete registered models and model versions
+- Set model version aliases (e.g. champion, challenger)
 - Access metrics, parameters, and metadata
 
 ## Features
@@ -25,6 +26,12 @@ This MCP server exposes MLflow functionality through a standardized protocol, al
 ### Model Registry
 - **Get Registered Models**: Search and list registered models
 - **Get Model Versions**: Browse model versions with filtering capabilities
+- **Create Registered Model**: Create a new model with optional description and tags
+- **Create Model Version**: Create a new version from a run's artifacts
+- **Rename Registered Model**: Rename an existing registered model
+- **Set Registered Model Alias**: Assign an alias (e.g. champion, challenger) to a specific model version
+- **Delete Registered Model**: Delete a model and all its versions
+- **Delete Model Version**: Delete a specific version of a model
 
 ## Installation
 
@@ -48,17 +55,12 @@ uv sync
 ## Configuration
 
 ### MLflow Connection
-The server is pre-configured to connect to your internal MLflow instance:
-- **Tracking URI**: `YOUR URI`
+By default, the server connects to MLflow at `http://localhost:5000` (the default local MLflow server URL).
 
-To use with a different MLflow instance, modify `mlflow_mcp_server/utils/mlflow_client.py`:
+To use a different MLflow instance, set the `MLFLOW_TRACKING_URI` environment variable:
 
-```python
-import mlflow
-from mlflow import MlflowClient
-
-mlflow.set_tracking_uri("your-mlflow-tracking-uri")
-client = MlflowClient()
+```bash
+export MLFLOW_TRACKING_URI="https://your-mlflow-instance.example.com"
 ```
 
 ### MCP Configuration
@@ -105,6 +107,12 @@ Once configured, the following tools become available to your AI assistant:
 #### Model Registry Tools
 - `get_registered_models(model_name?: str, token?: str)` - Search registered models
 - `get_model_versions(model_name?: str, token?: str)` - Browse model versions
+- `create_registered_model(name: str, description?: str, tags?: dict)` - Create a new registered model
+- `create_model_version(name: str, source: str, run_id?: str, description?: str, tags?: dict)` - Create a new model version
+- `rename_registered_model(name: str, new_name: str)` - Rename a registered model
+- `set_registered_model_alias(name: str, alias: str, version: str)` - Set an alias for a model version
+- `delete_registered_model(name: str)` - Delete a registered model and all its versions
+- `delete_model_version(name: str, version: str)` - Delete a specific model version
 
 ### Example Usage with AI Assistant
 
@@ -113,6 +121,10 @@ You can now ask your AI assistant questions like:
 - "Get the details of run ID abc123 including its metrics and parameters"
 - "List all registered models and their latest versions"
 - "Find experiments related to customer segmentation"
+- "Register a new model called 'my-classifier' with description 'Binary classifier for churn prediction'"
+- "Create a new version of 'my-classifier' from run abc123"
+- "Set the 'champion' alias on version 3 of 'my-classifier'"
+- "Delete version 1 of 'my-classifier'"
 
 ## Development
 
