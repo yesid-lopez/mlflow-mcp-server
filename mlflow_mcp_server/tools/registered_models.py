@@ -1,6 +1,8 @@
-from mlflow_mcp_server.utils.mlflow_client import client
-from pydantic import Field
 from typing import Annotated, Optional
+
+from pydantic import Field
+
+from mlflow_mcp_server.utils.mlflow_client import client
 
 
 def get_registered_models(
@@ -8,9 +10,7 @@ def get_registered_models(
         Optional[str],
         Field(description="The name of the registered model to search for"),
     ] = None,
-    token: Annotated[
-        Optional[str], Field(description="The token to use for pagination")
-    ] = None,
+    token: Annotated[Optional[str], Field(description="The token to use for pagination")] = None,
 ):
     filter_string = None
     if model_name:
@@ -75,7 +75,8 @@ def create_model_version(
     source: Annotated[
         str,
         Field(
-            description="The source URI of the model artifacts, e.g. 'runs:/<run_id>/model' or an absolute path"
+            description="The source URI of the model artifacts, "
+            "e.g. 'runs:/<run_id>/model' or an absolute path"
         ),
     ],
     run_id: Annotated[
