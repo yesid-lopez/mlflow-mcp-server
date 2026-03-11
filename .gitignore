@@ -10,3 +10,6 @@ wheels/
 .venv
 
 mlruns/
+
+# IDE
+.vscode/
