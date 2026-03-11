@@ -2,6 +2,16 @@
 
 A [Model Context Protocol (MCP)](https://modelcontextprotocol.io/) server that exposes MLflow experiment tracking and model registry operations as tools for AI assistants.
 
+## Table of Contents
+
+- [Quickstart](#quickstart)
+- [Tools](#tools)
+- [Example Prompts](#example-prompts)
+- [Configuration](#configuration)
+- [Installation (Development)](#installation-development)
+- [Project Structure](#project-structure)
+- [License](#license)
+
 ## Quickstart
 
 The fastest way to get started is to add the server to your MCP client config. No local clone required.
@@ -92,6 +102,29 @@ Replace `http://localhost:5000` with the URL of your MLflow tracking server.
 | `set_registered_model_alias` | Assign an alias (e.g. `champion`, `challenger`) to a model version |
 | `delete_registered_model` | Delete a registered model and all its versions |
 | `delete_model_version` | Delete a specific model version |
+
+## Example Prompts
+
+Once configured, you can ask your AI assistant things like:
+
+**Exploring experiments and runs:**
+- "List all experiments related to recommendation models"
+- "Show me the runs for experiment 12 and compare their metrics"
+- "Get the parameters and metrics for run abc123"
+- "Which runs in the fraud-detection experiment have the highest accuracy?"
+
+**Managing the model registry:**
+- "Show me all registered models"
+- "Register a new model called churn-classifier with description 'Binary classifier for customer churn'"
+- "Create a new version of churn-classifier from run abc123"
+- "Set the champion alias on version 3 of churn-classifier"
+- "Rename the model old-name to new-name"
+- "Delete version 1 of churn-classifier"
+
+**Analysis and comparison:**
+- "Compare the last 5 runs of the search-ranking experiment by NDCG and latency"
+- "What hyperparameters were used in the best-performing run of experiment 7?"
+- "List all model versions for recommendation-model and their aliases"
 
 ## Configuration
 
