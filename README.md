@@ -25,7 +25,7 @@ Add to `~/Library/Application Support/Claude/claude_desktop_config.json` (macOS)
   "mcpServers": {
     "mlflow": {
       "command": "uvx",
-      "args": ["--from", "git+https://github.com/yesid-lopez/mlflow-mcp-server", "mlflow_mcp_server"],
+      "args": ["mlflow-mcp-server"],
       "env": {
         "MLFLOW_TRACKING_URI": "http://localhost:5000"
       }
@@ -43,7 +43,7 @@ Add to `~/.cursor/mcp.json`:
   "mcpServers": {
     "mlflow": {
       "command": "uvx",
-      "args": ["--from", "git+https://github.com/yesid-lopez/mlflow-mcp-server", "mlflow_mcp_server"],
+      "args": ["mlflow-mcp-server"],
       "env": {
         "MLFLOW_TRACKING_URI": "http://localhost:5000"
       }
@@ -62,7 +62,7 @@ Add to your `opencode.json`:
   "mcp": {
     "mlflow": {
       "type": "local",
-      "command": ["uvx", "--from", "git+https://github.com/yesid-lopez/mlflow-mcp-server", "mlflow_mcp_server"],
+      "command": ["uvx", "mlflow-mcp-server"],
       "environment": {
         "MLFLOW_TRACKING_URI": "http://localhost:5000"
       }
